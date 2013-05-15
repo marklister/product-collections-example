@@ -12,5 +12,6 @@ on a line chart.
 
 ### Scala versions
 
-The underlying wrapper for jfreechart is only available for scala 2.10.x.  
-Product collections exists as an unmanaged jar in the lib directory.
+The underlying wrapper for jfreechart is only available for scala 2.10.x.
+
+![Image](ibm.png?raw=true)

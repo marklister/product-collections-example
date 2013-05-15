@@ -7,8 +7,8 @@ on a line chart.
 
 ### How to run
 
-1  git clone ....
-1  sbt run
+*  git clone git://github.com/marklister/product-collections-example.git
+*  sbt run
 
 ### Scala versions
 

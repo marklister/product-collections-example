@@ -1,5 +1,6 @@
 ## product-collections-example
----------------
+
+[![Build Status](https://travis-ci.org/marklister/product-collections-example.png)](https://travis-ci.org/marklister/product-collections-example)
 
 This is a sample project using [product-collections](https://github.com/marklister/product-collections) to load stock prices 
 from 1965, calculate the 250 period moving average and plot them both

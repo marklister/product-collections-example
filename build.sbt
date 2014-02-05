@@ -2,7 +2,7 @@ resolvers += "org.catch22" at "http://marklister.github.io/product-collections/"
 
 libraryDependencies += "com.github.wookietreiber" %% "scala-chart" % "latest.integration"
 
-libraryDependencies += "org.catch22" %% "product-collections" % "0.0.4.2-SNAPSHOT"
+libraryDependencies += "org.catch22" %% "product-collections" % "0.0.4.4-SNAPSHOT"
 
   initialCommands in console := """
   import org.catch22.collections.io._
@@ -11,4 +11,4 @@ libraryDependencies += "org.catch22" %% "product-collections" % "0.0.4.2-SNAPSHO
 
   name:="product-collections-example"
 
-  scalaVersion:="2.10.1" //scala-chart does not exist for 2.9.x
+  scalaVersion:="2.10.3" //scala-chart does not exist for 2.9.x

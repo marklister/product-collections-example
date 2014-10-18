@@ -2,10 +2,10 @@
  * This is a sample project using CollSeq to create a graph of Historical
  * Stock prices (courtesy of Yahoo finance -- thanks!)
  */
-import org.catch22.collections._
-import org.catch22.collections.io._
+import com.github.marklister.collections._
+import com.github.marklister.collections.io._
 import scalax.chart._
-import scalax.chart.Charting._
+import scalax.chart.api._
 import java.util.Date
 import org.jfree.data.time.Day
 
@@ -20,6 +20,6 @@ object MovingAverage {
     implicit def dateToDay(d:Date)= new Day(d)
     val dataSet= data._1.zip(data._7).toTimeSeriesCollection("Adjusted close") 
     dataSet.addSeries(maPlot.toTimeSeries("250ma"))        
-    XYLineChart(dataSet,title="IBM prices").show
+    XYLineChart(dataSet,title="IBM prices").show()
   }
 }

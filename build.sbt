@@ -1,4 +1,4 @@
-resolvers += "Bintray Repo marklister" at "https://dl.bintray.com/marklister/maven"
+resolvers += "JCenter" at "https://jcenter.bintray.com"
 
 libraryDependencies += "com.github.wookietreiber" %% "scala-chart" % "latest.integration"
 

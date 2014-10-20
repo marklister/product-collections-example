@@ -1,5 +1,3 @@
-resolvers += "JCenter" at "https://jcenter.bintray.com"
-
 libraryDependencies += "com.github.wookietreiber" %% "scala-chart" % "latest.integration"
 
 libraryDependencies += "com.github.marklister" %% "product-collections" % "1.0-RC1"

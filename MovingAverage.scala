@@ -13,9 +13,9 @@ object MovingAverage {
   def main(args: Array[String]): Unit = {
     val p= CsvParser[Date,Double,Double,Double,Double,Double,Double]  //Date,Open,High,Low,Close,Volume,Adj Close
     implicit val ymd=new DateConverter("yyyy-MM-dd")
-    val data = p.parseFile("ibm.csv",hasHeader=true)
+    val data = p.parseFile("ibm.csv",hasHeader=true).sortBy(_._1)
     val movingAverage= data._7.sliding(250).toList.map(_.mean)
-    val maPlot=data._1.drop(250).zip(movingAverage)
+    val maPlot=data._1.take(250).map(d=>(d,0.0))++data._1.drop(250).zip(movingAverage)
     //converts Dates to jfree.data.time.TimeSeries Days
     implicit def dateToDay(d:Date)= new Day(d)
     val dataSet= data._1.zip(data._7).toTimeSeriesCollection("Adjusted close") 

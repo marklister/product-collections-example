@@ -1,6 +1,6 @@
 libraryDependencies += "com.github.wookietreiber" %% "scala-chart" % "latest.integration"
 
-libraryDependencies += "com.github.marklister" %% "product-collections" % "1.0-RC1"
+libraryDependencies += "com.github.marklister" %% "product-collections" % "1.1"
 
   initialCommands in console := """
   import com.github.marklister.collections.io._
@@ -9,4 +9,4 @@ libraryDependencies += "com.github.marklister" %% "product-collections" % "1.0-R
 
   name:="product-collections-example"
 
-  scalaVersion:="2.11.2" //scala-chart does not exist for 2.9.x
+  scalaVersion:="2.11.4" //scala-chart does not exist for 2.9.x
